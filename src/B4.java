@@ -7,6 +7,11 @@ public class B4 {
         System.out.printf("Nhap n: ");
         int n = scanner.nextInt();
         sum = n;
+        if(n == 0) {
+            System.out.println("Tong cac so da nhap: " + sum);
+            return;
+        }
+
         while (n != 0){
             n = scanner.nextInt();
             sum += n;
